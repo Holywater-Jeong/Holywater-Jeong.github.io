@@ -1,24 +1,24 @@
 ---
 layout: default
-title: About Long Haul
+title: About Holywater Jeong
 ---
 
 <div class="post">
-	<h1 class="pageTitle">About Long Haul</h1>
-	<img src="{{ '/assets/img/touring.jpg' | prepend: site.baseurl }}" alt="">
-	<p class="intro">Long Haul is a minimal, long form <a href="http://jekyllrb.com">Jekyll</a> Theme. It can be used as is or customized to your hearts desire.</p>
-	<p>Long Haul was created in honor of all the hard working touring bicycles that have traversed the globe time and time again. Take it for a spin.</p>
-	<h2>Features</h2>
+	<h1 class="pageTitle">About Holywater Jeong</h1>
+	<p class="intro">
+	개발자 정성수의 개발 여정을 담을 블로그.
+	</p>
+	<p>
+	다른 이들에게 공유하고자 하는 목적도 있지만 제가 까먹을 것을 대비하여 적는 목적이 더 큽니다.
+	</p>
+	<p>
+	그렇기에 말투와 단어들이 틀린 것이 아니라면 너그럽게 봐주시길 바랍니다. :)
+	</p>
+	<h2>Favorite Skills</h2>
 	<ul>
-		<li>Built with SASS + GULP + BROWSERSYNC + AUTOPREFIXER</li>
-  		<li>SVG Social Icons from <a href="http://customizr.net/icons/">Customizr</a></li>
-  		<li><a href="http://responsive-nav.com/">Responsive Nav Menu</a></li>
-  		<li><a href="https://github.com/snaptortoise/jekyll-rss-feeds">XML Feed for RSS Readers</a></li>
-  		<li>Contact Form via <a href="http://formspree.io/">Formspree</a></li>
-      <li>5 Post Loop with excerpt on Home Page</li>
-  		<li>Previous / Next Post Navigation</li>
-      <li>Estimated Reading Time for posts</li>
-  		<li><a href="https://github.com/adobe-webplatform/dropcap.js">Drop Cap</a> on posts</li>
-  		<li><a href="http://typecast.com/blog/a-more-modern-scale-for-web-typography">A Better Type Scale</a></li>
-  	</ul>
+		<li>HTML5/CSS3</li>
+		<li>Javascript(React / Node.js)</li>
+		<li>Docker</li>
+		<li>AWS</li>
+	</ul>
 </div>
