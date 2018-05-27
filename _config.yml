@@ -1,7 +1,7 @@
-title: Long Haul
-description: Long Form Jekyll theme built with SASS / COMPASS / SUSY
+title: Developer Holywater Jeong
+description: 개발자 정성수의 기술(?) 블로그
 
-url: http://brianmaierjr.github.com/long-haul
+url: http://holywater-jeong.github.io
 baseurl: ""
 paginate_path: "blog/page:num/"
 permalink: blog/:title/
@@ -16,13 +16,11 @@ navigation:
    url: /index.html
  - title: About
    url: /about
- - title: Contact
-   url: /contact
 
 social:
-   github: brianmaierjr
-   twitter: brianmaierjr
-   facebook: brianmaierjr
-   email: brimaidesigns@gmail.com
+   github: holywater-jeong
+   twitter:
+   facebook: sungsoo9504@naver.com
+   email: holywaterj0410@gmail.com
 
 google_analytics: "UA-58263416-1"
