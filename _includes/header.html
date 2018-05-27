@@ -1,46 +1,16 @@
-<div class="header-wrapper">
-    <header>
-        <!-- logo and description -->
-        {% if page.layout != "post" %}
-        <div class="head-area">
-            <h1 class="site-logo">
-                <a href="/"><img src="/assets/img/logo.png" class="logo"/></a>
-            </h1>
-            <h3 class="site-description">{{ site.description }}</h3>
-        </div>
-        {% endif %}
-        <nav class="site-nav">
-            <div class="left-nav">
-                <!-- add titles to all buttons -->
-                <div class="ui secondary menu inverted">
-                    <a class="item" href="/">
-                        Home
-                    </a>
-                    <a class="item" href="/about.html">
-                        About
-                    </a>
-                    <a class="item" href="/archive.html">
-                        Archive
-                    </a>
-                    <div class="right menu">
-                        <div id="head-search" class="ui category search item">
-                            <div class="ui transparent icon input">
-                                <input placeholder="Search..." type="text" id="search-input" onkeypress="handleKeyPress()">
-                                <i class="search link icon" onclick="handleSubmit()"></i>
-                            </div>
-                        </div>
-
-                        <a class="item" href="http://stallman.org/facebook.html">
-                            <i class="facebook link icon"></i>
-                        </a>
-                        <a class="item" href="https://github.com/abhn">
-                            <i class="github link icon"></i>
-                        </a>
-                        <a class="item" href="/feed.xml">Subscribe</a>
-                    </div>
-                </div>
-            </div>
-            <div class="right-nav"></div>
-        </nav>
-    </header>
-</div>
+ <div class="header">
+     <div class="container">
+         <h1 class="logo"><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
+         <nav class="nav-collapse">
+             <ul class="noList">
+                 {% for link in site.navigation %}{% assign current = nil %}{% if page.url contains link.url or forloop.first and page.url == '/' or page.url == 'index.html' %}{% assign current = 'current' %}{% endif %}
+                 <li class="element {% if forloop.first %}first{% endif %} {{ current }} {% if forloop.last %}last{% endif %}">
+                     <a href="{{ link.url | prepend: site.baseurl }}">{{ link.title }}</a>
+                 </li> 
+                 {% endfor %}
+                 <li> <a href="https://github.com/brianmaierjr/long-haul" target="_blank">GitHub</a></li>
+                 <li><a href="https://github.com/brianmaierjr/long-haul/archive/master.zip">Download Theme</a></li>
+             </ul>
+         </nav>
+     </div>
+ </div><!-- end .header -->
