@@ -18,6 +18,8 @@ navigation:
    url: /about
  - title: Contact
    url: /contact
+ - title: Categories
+   url: /categories
 
 social:
    github: holywater-jeong
