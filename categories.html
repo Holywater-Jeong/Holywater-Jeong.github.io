@@ -1,6 +1,6 @@
 ---
 layout: default
-permalink: /category
+permalink: /categories
 ---
 {% assign esc_title="{{ p.title }}" %}
 {% assign esc_date="{{ p.date }}" %}
