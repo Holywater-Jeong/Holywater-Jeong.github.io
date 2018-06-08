@@ -10,7 +10,7 @@ categories:	['javascript', 'nodejs', 'ecmascript']
 </p>
 <h3>설치</h3>
 <p>
-	먼저 <b>mysql2</b>라는 모듈이 필요하다. Promise Wrapper API가 적용되어있는 mysql 라이브러리이다. npm이나 yarn으로 설치를 하면 된다.
+	먼저 <b>mysql2</b>라는 모듈이 필요하다. Promise를 적용할 수 있는 mysql 라이브러리이다. npm이나 yarn으로 설치를 하면 된다.
 </p>
 {% highlight shell %}
 npm i --save mysql2  or  yarn add mysql2
