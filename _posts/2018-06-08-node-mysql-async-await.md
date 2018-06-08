@@ -51,7 +51,7 @@ categories:	['javascript', 'nodejs', 'ecmascript']
 		  database: 'DBNAME'
 		});
 		/* Step 2. get connection */
-		const dbTest = () => {
+		const dbTest = async () => {
 			const connection = await pool.getConnection(async conn => conn);
 		};
 	{% endhighlight %}
@@ -71,7 +71,7 @@ categories:	['javascript', 'nodejs', 'ecmascript']
 		  database: 'DBNAME'
 		});
 		/* Step 2. get connection */
-		const dbTest = () => {
+		const dbTest = async () => {
 			try {
 				const connection = await pool.getConnection(async conn => conn);
 				try {
@@ -108,7 +108,7 @@ categories:	['javascript', 'nodejs', 'ecmascript']
 		  database: 'DBNAME'
 		});
 		/* Step 2. get connection */
-		const dbTest = () => {
+		const dbTest = async () => {
 			try {
 				const connection = await pool.getConnection(async conn => conn);
 				try {
