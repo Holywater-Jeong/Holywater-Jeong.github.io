@@ -12,11 +12,9 @@ categories:	['javascript', 'nodejs', 'ecmascript']
 <p>
 	먼저 <b>mysql2</b>라는 모듈이 필요하다. Promise Wrapper API가 적용되어있는 mysql 라이브러리이다. npm이나 yarn으로 설치를 하면 된다.
 </p>
-<p>
-	{% highlight shell %}
-		npm i --save mysql2  or  yarn add mysql2
-	{% endhighlight %}
-</p>
+{% highlight shell %}
+npm i --save mysql2  or  yarn add mysql2
+{% endhighlight %}
 <h3>Step 1. DB Pool 생성</h3>
 <p>
 	설치를 마쳤다면 바로 예제로 넘어가자. 먼저 <b>"mysql2/promise"</b>를 require한다. mysql2만 호출하면 기존과 다를바가 없이 Promise 기능을 사용할 수가 없다.
