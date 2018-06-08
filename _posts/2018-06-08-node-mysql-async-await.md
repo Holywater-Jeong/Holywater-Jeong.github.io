@@ -35,7 +35,7 @@ categories:	['javascript', 'nodejs', 'ecmascript']
 <p>
 	백문이 불여일견 주석 Step 2 이후로 추가된 코드를 먼저 살펴보자.
 	{% highlight javascript %}
-		// Step 1.
+		/* Step 1 */
 		const dbTest = () => {
 			const mysql = require('mysql2/promise');
 			const pool = mysql.createPool({
@@ -44,8 +44,7 @@ categories:	['javascript', 'nodejs', 'ecmascript']
 			  password: 'process.env.DB_PW',
 			  database: 'DBNAME'
 			});
-
-			// Step 2.
+			/* Step 2. */
 			const connection = await pool.getConnection(async conn => conn);
 		};
 	{% endhighlight %}
@@ -54,7 +53,7 @@ categories:	['javascript', 'nodejs', 'ecmascript']
 <h2>Step 3. 쿼리</h2>
 <p>
 	{% highlight javascript %}
-		// Step 1.
+		/* Step 1. */
 		const dbTest = () => {
 			const mysql = require('mysql2/promise');
 			const pool = mysql.createPool({
@@ -63,10 +62,9 @@ categories:	['javascript', 'nodejs', 'ecmascript']
 			  password: 'process.env.DB_PW',
 			  database: 'DBNAME'
 			});
-
-			// Step 2.
+			/* Step 2. */
 			const connection = await pool.getConnection(async conn => conn);
-			// Step 3.
+			/* Step 3. */
 			const ID = 'HELLO';
 			const PW = 'WORLD';
 			const [rows] = await connection.query('INSERT INTO MEMBERS_INFO(ID, PW) VALUES(?, ?)', [ID, PW]);
