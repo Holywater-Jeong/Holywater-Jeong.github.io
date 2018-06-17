@@ -9,6 +9,8 @@ title: Categories
 		<li><a href="./javascript">JavaScript</a></li>
 		<li><a href="./ecmascript">ECMAScript</a></li>
 		<li><a href="./react">React</a></li>
+		<li><a href="./nextjs">Next.js</a></li>
 		<li><a href="./nodejs">Node.js</a></li>
+		<li><a href="./express">Express MVC Framework</a></li>
 	</ul>
 </div>

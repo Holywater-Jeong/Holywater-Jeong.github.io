@@ -2,8 +2,20 @@
 layout:		post
 title:		"React의 SSR Framework인 Next.js로 간단하게 프로젝트 생성하기(Node.js Express)"
 date:		2018-06-12 00:45:00 +0000
-categories:	['javascript', 'react']
+categories:	['javascript', 'react', 'nextjs', 'nodejs', 'express']
 ---
+
+<h3>들어가기 전에 이 글에서 사용하는 기술</h3>
+<ul>
+	<li>Node.js(v8) & Express MVC Framework(v4)</li>
+	<li>React(v16) & Next.js(v6)</li>
+</ul>
+<p>
+위와 같은 기술을 사용할 예정입니다. 다른 언어, 다른 서버 MVC Framework에서 Next.js를 사용하는 방법을 제시하지는 못합니다.
+(추후에 Python Django와 React의 조합을 계획 중에 있습니다.)<br>
+양해 부탁드립니다 :)
+</p>
+<h3>들어가며</h3>
 <p>
 	앞서 <a href="/blog/react-ssr">React의 SSR(Server Side Rendering)</a>에 대해서 포스팅한 적이 있다.
 	React에서 SSR은 <b>"react-dom"</b>의 server 기능을 이용해서 작성하는데 <b>Next.js</b>를 이용하면 방식이 사뭇 다르게 느껴질 수 있다.
@@ -118,8 +130,11 @@ export default () => (
 </p>
 <h3>파라미터 처리는?</h3>
 <p>
-	역시 라우팅 관련해서 파라미터 관련된 내용을 안 짚고 넘어갈 수는 없다. 역시나 next-routes 기능에서 손쉽게 처리 가능하다
+	역시 라우팅 관련해서 파라미터 관련된 내용을 안 짚고 넘어갈 수는 없다.
+	역시나 next-routes 기능에서 손쉽게 처리 가능하다.
 	일단 routes.js에서 route.add로 아래와 같이 추가하자.
+	(추후에 이 소스를 기반으로 포스팅을 진행한다면 이 부분은 임시로 설명하기 위한 부분이기에 삭제하고 진행할 것이다.
+	이번 포스팅에서만 설명을 위해서 추가한다.)
 </p>
 {% highlight javascript %}
 routes

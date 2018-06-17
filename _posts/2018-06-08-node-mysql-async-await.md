@@ -6,7 +6,7 @@ categories:	['javascript', 'nodejs', 'ecmascript']
 ---
 
 <p>
-	<span class="dropcap">N</span>ode.js로 코드를 작성하다보면 분명히 한 번 이상은 겪게 되는 비동기 코드 문제. 일명 Callback Hell이라고 불리우는 코드 구조를 본다면 진짜 지옥의 구렁텅이로 빠져드는 것만 같다. 다행히도 여러가지의 비동기 코드를 작성하는 방법이 제시되고는 한다. 몇 가지 예를 들자면 async 라이브러리, ES2015의 기능 Promise, ES2017의 기능 async/await, RxJS 등이 있다. 필자는 주로 Promise를 사용했는데 얼마전 사용해본 ES2017의 async/await가 가장 편한 것 같다. 기존까지는 Mysql DB Connection에 있어서 Promise로 작성하던 것을 async/await로 싹 바꿨는데 async/await를 활용하는 방법에 대해 잠깐 소개하고자 한다. (자신의 Node.js 버젼이 async/await이 사용 가능한 버젼인지 찾아보고 참고하길 바란다. <a href='https://node.green/'>node 버젼 별 기능 확인</a>)
+	Node.js로 코드를 작성하다보면 분명히 한 번 이상은 겪게 되는 비동기 코드 문제. 일명 Callback Hell이라고 불리우는 코드 구조를 본다면 진짜 지옥의 구렁텅이로 빠져드는 것만 같다. 다행히도 여러가지의 비동기 코드를 작성하는 방법이 제시되고는 한다. 몇 가지 예를 들자면 async 라이브러리, ES2015의 기능 Promise, ES2017의 기능 async/await, RxJS 등이 있다. 필자는 주로 Promise를 사용했는데 얼마전 사용해본 ES2017의 async/await가 가장 편한 것 같다. 기존까지는 Mysql DB Connection에 있어서 Promise로 작성하던 것을 async/await로 싹 바꿨는데 async/await를 활용하는 방법에 대해 잠깐 소개하고자 한다. (자신의 Node.js 버젼이 async/await이 사용 가능한 버젼인지 찾아보고 참고하길 바란다. <a href='https://node.green/'>node 버젼 별 기능 확인</a>)
 </p>
 <h3>설치</h3>
 <p>
