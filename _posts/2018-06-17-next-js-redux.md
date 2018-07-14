@@ -2,7 +2,7 @@
 layout:		post
 title:		"Next.js에서 Redux 적용해보기"
 date:		2018-06-17 00:45:00 +0000
-categories:	['javascript', 'react', 'nextjs', 'nodejs', 'express']
+categories:	['javascript', 'react', 'nodejs']
 ---
 
 <h3>들어가기 전에 이 글에서 사용하는 기술</h3>
@@ -130,8 +130,8 @@ export default class MyApp extends App {
 	기본 먼저 default 값을 호출하고 사용자가 정의한 부분 중 바뀐 부분을 변경 적용하는 것으로 알고 있다.
 	<b>_document.js</b>도 글로벌한 페이지 관리에 있어서 활용을 할 수 있다.
 	<b>head 태그</b>나 <b>전역적인 스타일 관리</b>에 있어서 사용하는 것이 좋은 것으로 보인다.
-	하지만 <a href="https://zeit.co/blog/next6#app-component">공식 문서</a>를 참고했을 때 <b>data fetching과 runtime Lifycycle은 _app.js 안에서만</b> 처리가 가능하다고 하니 참고하도록 하자.
-	<a href="https://github.com/zeit/next.js#custom-app">깃 허브</a> 또한 custom _app.js, custom _document.js에 대한 언급이 있다.
+	하지만 <a target="_blank" href="https://zeit.co/blog/next6#app-component">공식 문서</a>를 참고했을 때 <b>data fetching과 runtime Lifycycle은 _app.js 안에서만</b> 처리가 가능하다고 하니 참고하도록 하자.
+	<a target="_blank" href="https://github.com/zeit/next.js#custom-app">깃 허브</a> 또한 custom _app.js, custom _document.js에 대한 언급이 있다.
 	간단히 설명하자면 <b>_document.js는 server 렌더링에서 작동</b>하고, <b>_app.js는 페이지 변경 간의 레이아웃 유지, 네비게이팅 상태에 있어서 유지</b>할 수 있다고 언급되어 있다.
 	이런 특징들을 잘 숙지하여 필요한 기능에 있어서 글로벌한 처리가 필요한 부분을 _document.js와. _app.js로 잘 활용해보도록 하자.
 </p>

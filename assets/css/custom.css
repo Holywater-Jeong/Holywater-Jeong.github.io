@@ -9,3 +9,17 @@
 	line-height: 1.2em;
 	height: 7.2em;
 } 
+
+.italic {
+	font-style: italic;
+}
+
+.quote {
+	margin-top: 1em;
+	margin-bottom: 1em;
+	font-size: 0.8em;
+}
+
+.block {
+	display: block;
+}

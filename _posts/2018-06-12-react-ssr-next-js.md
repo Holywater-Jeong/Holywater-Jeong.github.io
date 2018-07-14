@@ -2,7 +2,7 @@
 layout:		post
 title:		"React의 SSR Framework인 Next.js로 간단하게 프로젝트 생성하기(Node.js Express)"
 date:		2018-06-12 00:45:00 +0000
-categories:	['javascript', 'react', 'nextjs', 'nodejs', 'express']
+categories:	['javascript', 'react', 'nodejs']
 ---
 
 <h3>들어가기 전에 이 글에서 사용하는 기술</h3>
@@ -48,7 +48,7 @@ yarn global add create-next-app
 yarn create next-app --example with-next-routes next-app
 {% endhighlight %}
 <p>
-	이렇게하면 <a href="https://github.com/zeit/next.js/tree/canary/examples/with-next-routes">with-next-routes</a>의 예제를 next-app 이라는 디렉토리에 가져온다.
+	이렇게하면 <a target="_blank" href="https://github.com/zeit/next.js/tree/canary/examples/with-next-routes">with-next-routes</a>의 예제를 next-app 이라는 디렉토리에 가져온다.
 	이 상태에서 바로 yarn dev를 실행시킨다면 localhost 3000포트에서 간단한 Next.js 기반의 Node.js Express Server Application이 구동된다.
 	특별히 이 예제는 라우팅을 Next.js의 기본 방법보다도 더 쉽게 작성할 수 있는 <b>next-routes</b>라는 라이브러리를 사용하는 예제이다.
 	지금부터는 잠깐의 조정과 함께 디렉토리를 살펴보겠다.
@@ -126,7 +126,7 @@ export default () => (
 	그리고 about 링크를 눌러 페이지를 확인하면
 	<img src="/assets/img/{{ page.id }}/nav-about.png"/>
 	이렇게 나온다. 이런 식으로 응용을 하자면 next에서 제공하는 next/head 기능을 이용하여 공통적인 head 태그 파일을 저장할 수 있겠다.
-	next/head는 <a href="https://github.com/zeit/next.js/#populating-head">링크</a>를 참고하자
+	next/head는 <a target="_blank" href="https://github.com/zeit/next.js/#populating-head">링크</a>를 참고하자
 </p>
 <h3>파라미터 처리는?</h3>
 <p>
@@ -181,6 +181,6 @@ export default class extends Component {
 <p>
 	next로 빌드하게 되면 .next 디렉토리가 생성되는데 그 안에 보면 글로벌한 페이지 관리를 하는 <b>_document.js</b>,
 	에러 페이지를 구현할 수 있는 <b>_error.js</b> 등이 있다.
-	아무래도 이런 내용은 <a href="https://nextjs.org/docs/#setup">Next.js 공식문서</a>를 한 번 읽어보는 게 좋을 것이다.
+	아무래도 이런 내용은 <a target="_blank" href="https://nextjs.org/docs/#setup">Next.js 공식문서</a>를 한 번 읽어보는 게 좋을 것이다.
 </p>
 <h2>끝.</h2>
