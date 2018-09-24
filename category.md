@@ -11,6 +11,8 @@ title: Categories
 		<li><a href="./react">React</a></li>
 		<li><a href="./vue">Vue</a></li>
 		<li><a href="./nodejs">Node.js</a></li>
+		<li><a href="./python">Python</a></li>
+		<li><a href="./django">Django</a></li>
 		<li><a href="./docker">Docker</a></li>
 	</ul>
 </div>
