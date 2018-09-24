@@ -27,9 +27,9 @@ categories:	['javascript', 'vue', 'python', 'django']
 <p>
 	일단 Vue 템플릿에서는 Vue의 변수를 호출할 때
 </p>
-{% highlight javascript %}
-<div>{{변수명}}</div>
-{% endhighlight %}
+{% raw %}
+<b>{{ 변수명 }}</b>
+{% endraw %}
 <p>
 	이렇게 작성한다.
 	그런데 공교롭게도 DTL에서도 장고 내의 변수를 호출할 때 같은 방법을 취한다.
