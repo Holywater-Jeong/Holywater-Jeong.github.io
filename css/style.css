@@ -801,9 +801,9 @@ HEADER STYLING
 ***************/
 .header {
   background-color: seagreen;
-  background-image: url("../img/real-jss.png");
-  background-size: cover;
-  background-position: 0% 100%;
+  background-image: url("../img/real-jss.jpeg");
+  background-size: contain;
+  background-position: center;
   color: white;
   padding: 0;
   height: 3em; }
