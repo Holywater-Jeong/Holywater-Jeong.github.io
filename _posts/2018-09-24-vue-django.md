@@ -27,8 +27,10 @@ categories:	['javascript', 'vue', 'python', 'django']
 <p>
 	일단 Vue 템플릿에서는 Vue의 변수를 호출할 때
 </p>
-{% highlight javascript %}
+{% highlight html %}
+{% raw %}
 <div>{{변수명}}</div>
+{% endraw %}
 {% endhighlight %}
 <p>
 	이렇게 작성한다.
