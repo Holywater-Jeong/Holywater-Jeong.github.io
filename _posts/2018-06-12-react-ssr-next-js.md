@@ -1,7 +1,7 @@
 ---
 layout:		post
 title:		"React의 SSR Framework인 Next.js로 간단하게 프로젝트 생성하기(Node.js Express)"
-date:		2018-06-12 00:45:00 +0000
+date:		2018-06-12 00:45:00 +0900
 categories:	['javascript', 'react', 'nodejs']
 ---
 
@@ -122,9 +122,9 @@ export default () => (
 {% endhighlight %}
 <p>
 	이러면 홈 화면에서 아래와 같이 나올 것이다.
-	<img src="/assets/img/{{ page.id }}/nav-index.png"/>
+	<img src="/assets/img{{ page.id }}/nav-index.png"/>
 	그리고 about 링크를 눌러 페이지를 확인하면
-	<img src="/assets/img/{{ page.id }}/nav-about.png"/>
+	<img src="/assets/img{{ page.id }}/nav-about.png"/>
 	이렇게 나온다. 이런 식으로 응용을 하자면 next에서 제공하는 next/head 기능을 이용하여 공통적인 head 태그 파일을 저장할 수 있겠다.
 	next/head는 <a target="_blank" href="https://github.com/zeit/next.js/#populating-head">링크</a>를 참고하자
 </p>

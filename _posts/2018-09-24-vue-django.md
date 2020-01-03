@@ -1,7 +1,7 @@
 ---
 layout:		post
 title:		"Vue.js를 Django 템플릿에서 사용해보자"
-date:		2018-09-24 00:45:00 +0000
+date:		2018-09-24 00:45:00 +0900
 categories:	['javascript', 'vue', 'python', 'django']
 ---
 

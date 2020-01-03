@@ -1,7 +1,7 @@
 ---
 layout:		post
 title:		"Node.js에서 mysql을 async/await으로 작성하기"
-date:		2018-06-08 19:45:00 +0000
+date:		2018-06-08 19:45:00 +0900
 categories:	['javascript', 'nodejs', 'ecmascript']
 ---
 
