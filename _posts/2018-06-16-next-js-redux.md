@@ -27,7 +27,7 @@ categories:	['javascript', 'react', 'nodejs']
 </p>
 <h3>간단한 세팅.</h3>
 <p>
-	필자의 이전 포스트인 <a href="/blog/react-ssr-next-js">"React의 SSR Framework인 Next.js로 간단하게 프로젝트 생성하기(Node.js Express)"</a> 글을 참고한 사람이라면 거기서 시작해도 상관 없다.
+	필자의 이전 포스트인 <a href="/2018/06/11/react-ssr-next-js">"React의 SSR Framework인 Next.js로 간단하게 프로젝트 생성하기(Node.js Express)"</a> 글을 참고한 사람이라면 거기서 시작해도 상관 없다.
 	먼저 필자는 패키지매니저를 <b>yarn</b>으로 사용하기에 yarn을 주로 언급할 예정이다.
 </p>
 {% highlight shell %}
@@ -40,7 +40,7 @@ yarn add react-redux redux redux-thunk
 	<b>redux-thunk</b>는 Redux에서 비동기 통신을 위해 사용하는 라이브러리이다.
 	Next.js 프로젝트를 처음부터 구성해야하는 사람이라면 <b>next, react, react-dom</b>도 패키지매니저로 설치해주어야 한다.
 	하지만, Next.js와 Redux를 동시에 검색한 분들이라면 기본적으로 Next.js를 설치하고 프로젝트를 간단하게나마 구성한 사람으로 생각이 들기에 기본적인 구성은 마쳤다는 가정을 하고 포스팅을 하겠다.
-	간단한 프로젝트 생성에 관해서는 위에서도 언급한 필자의 <a href="/blog/react-ssr-next-js">직전 포스트</a>를 참고한다면 좋을 것이다.
+	간단한 프로젝트 생성에 관해서는 위에서도 언급한 필자의 <a href="/2018/06/11/react-ssr-next-js">직전 포스트</a>를 참고한다면 좋을 것이다.
 </p>
 <h3>예제 시작. 간단한 Redux 스토어부터 만들기</h3>
 <p>
@@ -163,7 +163,7 @@ export default connect(mapStateToProps)(Index);
 	위와 같이 ./pages 디렉토리의 페이지 파일에서 connect를 해준다면 끝.
 	아래와 같은 화면을 볼 수 있다.
 	여기서 member.id의 값을 dispatch로 값을 입력해주는 함수가 있다면 Guest가 아닌 원하는 id의 값을 볼 수가 있을 것이다.
-	(아래 화면과 관련된 코드의 자세한 내용은 <a href="/blog/react-ssr-next-js">전 글</a>에서 확인 가능합니다.)
+	(아래 화면과 관련된 코드의 자세한 내용은 <a href="/2018/06/11/react-ssr-next-js">전 글</a>에서 확인 가능합니다.)
 	<img src='/assets/img{{ page.id }}/home.png'/>
 </p>
 <h2>끝.</h2>

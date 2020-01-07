@@ -17,7 +17,7 @@ categories:	['javascript', 'react', 'nodejs']
 </p>
 <h3>들어가며</h3>
 <p>
-	앞서 <a href="/blog/react-ssr">React의 SSR(Server Side Rendering)</a>에 대해서 포스팅한 적이 있다.
+	앞서 <a href="/2018/06/04/react-ssr">React의 SSR(Server Side Rendering)</a>에 대해서 포스팅한 적이 있다.
 	React에서 SSR은 <b>"react-dom"</b>의 server 기능을 이용해서 작성하는데 <b>Next.js</b>를 이용하면 방식이 사뭇 다르게 느껴질 수 있다.
 	하지만 결국 <b>Next.js도 "react-dom"</b>을 기반으로 하여 작동한다.
 	그래서 이번 포스팅에서는 Next.js를 간단히 알아보고 이를 이용하여 SSR을 구현하는 방법을 알아보고자 한다.
