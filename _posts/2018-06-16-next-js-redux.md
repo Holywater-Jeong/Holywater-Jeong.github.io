@@ -1,7 +1,7 @@
 ---
 layout:		post
 title:		"Next.js에서 Redux 적용해보기"
-date:		2018-06-17 00:45:00 +0900
+date:		2018-06-16 09:45:00 +0900
 categories:	['javascript', 'react', 'nodejs']
 ---
 

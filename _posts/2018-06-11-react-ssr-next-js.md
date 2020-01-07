@@ -1,7 +1,7 @@
 ---
 layout:		post
 title:		"React의 SSR Framework인 Next.js로 간단하게 프로젝트 생성하기(Node.js Express)"
-date:		2018-06-12 00:45:00 +0900
+date:		2018-06-11 09:45:00 +0900
 categories:	['javascript', 'react', 'nodejs']
 ---
 
