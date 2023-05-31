@@ -1,8 +1,6 @@
 ---
-layout:		post
 title:		"Vue.js의 SSR 프레임워크인 Nuxt.js를 알아보자"
 date:		2018-07-13 23:10:00 +0900
-categories:	['javascript', 'vue']
 ---
 
 
@@ -11,10 +9,10 @@ categories:	['javascript', 'vue']
 	블로그를 작성에 있어서 조금 뜸했다.
 	다름이 아니라 얼마 전 새 직장에 들어가게 돼서 정신이 없었다.
 	새 직장에서 일을 하게 됐는데 <b>Vue</b>를 사용하고 있다.
-	<br>
+	<br />
 	먼저 간략하게 소개를 하자면 필자는 가장 처음 웹을 시작 할 때 jQuery와 BootStrap으로 시작을 했고, 신규 프로젝트로 SPA(Single Page Application)를 만들기 위해 Angular.js를 사용했었다.
 	그리고 지난 몇년 간 관심을 주로 가지던 쪽은 React였고 최근에는 React의 SSR을 편하게 구현할 수 있는 Next.js를 사용해보는 등 JS UI 라이브러리/프레임워크 중에선 나름 깊게 학습해본 것 같다.
-	<br>
+	<br />
 	이것 저것 해봐서 그런지 Vue를 당장 이해하는 것에 있어서 어려움은 없지만 <b>편하게 개발하는 것을 중요하게 생각하는 사람</b>으로서 <b>React의 Next.js 같은 프레임워크</b>인 <b>Vue 진영의 SSR 프레임워크인 Nuxt.js</b>를 사용해보게 되었다.
 </p>
 <h3>What is Nuxt.js?</h3>
@@ -35,23 +33,22 @@ categories:	['javascript', 'vue']
 <h3>전체적인 동작 방식과 특징</h3>
 <p>
 	역시나 먼저는 <a target='_blank' href='https://ko.nuxtjs.org/guide#%EC%96%B4%EB%96%BB%EA%B2%8C-%EB%8F%99%EC%9E%91%ED%95%A9%EB%8B%88%EA%B9%8C-'>공식 문서</a>를 보는 것이 좋긴하다.
-	Nuxt.js는 <B>Vue 2를 기반</B>으로해서 <b>Vue Router, Vuex(선택), Vue Server Renderer(spa 모드 제외), Vue-meta</b>를 포함한다고 한다.
+	Nuxt.js는 <b>Vue 2를 기반</b>으로해서 <b>Vue Router, Vuex(선택), Vue Server Renderer(spa 모드 제외), Vue-meta</b>를 포함한다고 한다.
 	원래는 직접 구현해야하는 부분을 Nuxt가 간단하게 구현할 수 있도록 도와준다.
 	특징을 한 번 보면 <b>SSR, HMR, Head 요소 관리, 비동기 데이터 기반 라우팅 시스템, ES6/ES7 지원</b> 등이 눈에 띈다.
-	<br>
+	<br />
 	다른 요소야 개발자 입장에서 Next.js와 크게 다르다고 느끼진 못 할수도 있지만 한가지를 꼽자면 <b>Head 요소</b>가 있다.
 	Next.js에서 Head 요소를 관리하는 방법은 Next에서 Head 컴포넌트를 불러와서 작성을 하는 것이지만 <b>Nuxt.js는 nuxt.config.js에서 json 형식으로 작성</b>하는 것이 조금 다르다고 볼 수 있다.
 	관련 된 내용은 아래 링크한 문서를 참고하자.
-	<br>
+	<br />
 	<a target='_blank' href='https://ko.nuxtjs.org/api/configuration-head'>nuxt.config.js 에서 Head 프로퍼티 관리</a>, 
 	<a target='_blank' href='https://ko.nuxtjs.org/api/pages-head'>*.vue 파일에서 head 메소드로 요소 관리</a>,
 </p>
 <h3>라우팅</h3>
 <p>
 	라우팅 기능이 확실히 조금 편해보인다.
-	pages라는 디렉토리 내에 example.vue 파일을 만든다면 자동으로 /example로 라우팅 하게 된다.
-	pages 디렉토리 내에 user라는 디렉토리를 만들고 info.vue 파일을 생성하면 /user/info 로 라우팅이 된다.
-	파라미터가 필요한 경우에는 _{원하는 파라미터 명}.vue로 만들어서 /{원하는 파라미터}? 로 라우팅을 할 수 있다.
+	`pages`라는 디렉토리 내에 `example.vue` 파일을 만든다면 자동으로 `/example` 로 라우팅 하게 된다.
+	`pages` 디렉토리 내에 `user`라는 디렉토리를 만들고 `info.vue` 파일을 생성하면 `/user/info` 로 라우팅이 된다.
 	이 부분도 <a target='_blank' href='https://ko.nuxtjs.org/guide/routing'>문서</a>로 친절하게 설명이 되어있으니 참고하도록 하자.
 </p>
 <h3>Vuex</h3>

@@ -1,8 +1,6 @@
 ---
-layout:		post
 title:		"Vue.js를 Django 템플릿에서 사용해보자"
 date:		2018-09-24 00:45:00 +0900
-categories:	['javascript', 'vue', 'python', 'django']
 ---
 
 
@@ -27,21 +25,23 @@ categories:	['javascript', 'vue', 'python', 'django']
 <p>
 	일단 Vue 템플릿에서는 Vue의 변수를 호출할 때
 </p>
-{% highlight html %}
-{% raw %}
+
+```
 <div>{{변수명}}</div>
-{% endraw %}
-{% endhighlight %}
+```
+
 <p>
 	이렇게 작성한다.
 	그런데 공교롭게도 DTL에서도 장고 내의 변수를 호출할 때 같은 방법을 취한다.
 	어떻게 처리해야할까?
 </p>
-{% highlight javascript %}
+
+```
 new Vue({
   delimiters: ['${', '}']
 })
-{% endhighlight %}
+```
+
 <p>
 	위와 같이 작성해주면 문제 해결!
 	저렇게 구분이 될 뿐만 아니라 장고 변수와 Vue의 변수를 결합하여 응용이 가능해진다.
@@ -51,7 +51,8 @@ new Vue({
 	장고 템플릿으로 구성하게 될 때 각 페이지마다 Vue가 선언이 되어야하는 구조가 된다.
 	그렇게 되면 Vue로 공통 레이아웃을 작성할 수 없을 것만 같은 느낌적인 느낌이 들고는 하는데 역시나 간단한 해결 방법이 있다.
 </p>
-{% highlight javascript %}
+
+```
 var mixin = {
   created: function () { console.log(1) }
 }
@@ -61,7 +62,8 @@ var vm = new Vue({
 })
 // => 1(
 // => 2
-{% endhighlight %}
+```
+
 <p>
 	출처: <a href='https://kr.vuejs.org/v2/api/index.html#mixins' target='_blank'>https://kr.vuejs.org/v2/api/index.html#mixins</a>
 </p>
