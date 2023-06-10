@@ -32,7 +32,7 @@ date: 2018-06-20 23:10:00 +0900
 
 image 출처: [docker blog](https://blog.docker.com/2016/07/the-10-most-common-questions-it-admins-ask-about-docker/")
 
-VM은 ₩Host OS > HyperVisor > Guest OS(여러 개 나뉘기 시작) > Bins/Libs > App`이런 순서로 나뉜다.
+VM은 `Host OS > HyperVisor > Guest OS(여러 개 나뉘기 시작) > Bins/Libs > App`이런 순서로 나뉜다.
 도커는`Host OS > Docker Engine > Bins/Libs > App` 순서로 나뉜다.
 차이는 VM은 Host OS 위에 Guest OS로 분리 되지만
 도커에서는 Host OS 하나만 존재하고 Docker Engine에서 작업 영역이 격리된다는 것이다.
