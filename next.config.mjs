@@ -1,4 +1,4 @@
-const { withContentlayer } = require('next-contentlayer');
+import { withContentlayer } from 'next-contentlayer2';
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -7,4 +7,4 @@ const nextConfig = {
   swcMinify: true,
 };
 
-module.exports = withContentlayer(nextConfig);
+export default withContentlayer(nextConfig);

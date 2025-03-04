@@ -1,54 +1,54 @@
-import { defineDocumentType, makeSource } from "contentlayer/source-files"
+import { defineDocumentType, makeSource } from 'contentlayer2/source-files';
 
-/** @type {import('contentlayer/source-files').ComputedFields} */
+/** @type {import('contentlayer2/source-files').ComputedFields} */
 const computedFields = {
   slug: {
-    type: "string",
+    type: 'string',
     resolve: (doc) => `/${doc._raw.flattenedPath}`,
   },
   slugAsParams: {
-    type: "string",
-    resolve: (doc) => doc._raw.flattenedPath.split("/").slice(1).join("/"),
+    type: 'string',
+    resolve: (doc) => doc._raw.flattenedPath.split('/').slice(1).join('/'),
   },
-}
+};
 
 export const Page = defineDocumentType(() => ({
-  name: "Page",
+  name: 'Page',
   filePathPattern: `pages/**/*.mdx`,
-  contentType: "mdx",
+  contentType: 'mdx',
   fields: {
     title: {
-      type: "string",
+      type: 'string',
       required: true,
     },
     description: {
-      type: "string",
+      type: 'string',
     },
   },
   computedFields,
-}))
+}));
 
 export const Post = defineDocumentType(() => ({
-  name: "Post",
+  name: 'Post',
   filePathPattern: `posts/**/*.mdx`,
-  contentType: "mdx",
+  contentType: 'mdx',
   fields: {
     title: {
-      type: "string",
+      type: 'string',
       required: true,
     },
     description: {
-      type: "string",
+      type: 'string',
     },
     date: {
-      type: "date",
+      type: 'date',
       required: true,
     },
   },
   computedFields,
-}))
+}));
 
 export default makeSource({
-  contentDirPath: "./content",
+  contentDirPath: './content',
   documentTypes: [Post, Page],
-})
+});
